@@ -1,0 +1,660 @@
+body{
+    
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+  
+}
+
+
+
+
+
+
+    footer{
+      margin: 0;
+    }
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+  
+    background-color:rgb(146 190 137)
+}
+
+
+
+nav ul {
+    display: flex;
+    gap: 20px; 
+  
+    list-style: none; 
+}
+
+nav li {
+    list-style: none; 
+}
+
+nav a {
+    text-decoration: none; 
+    color: black; 
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding:0 10 px;
+}
+
+
+.logo img{
+    float: left;
+    position: relative;
+    width: 35%;
+    height:10%;
+    padding-left: 2%;
+  
+}
+
+
+h1{
+    font-size: 100px;
+    font-family: "shrikhand",serif;
+  
+ 
+}
+
+.text p{
+    font-family:"bitter";
+}
+.container{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex:1;
+}
+.pic img{
+    width:100%;
+    height:41.575vh;
+    margin-top: 75%;
+   
+
+   
+    
+    
+}
+.text{
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+.products{
+    margin-top: 15%;
+    display: flex;
+    gap:10;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+/*.products-details img{
+  width:250px;
+  height: 300px;
+ 
+}*/
+.products-details{
+    list-style: none;
+}
+
+footer{
+    background-color: #E1DFD9;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    font-family: "bitter";
+    margin-top: auto;
+   
+ 
+
+}
+.fot {
+text-align: left;
+}
+
+
+.image-container {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color:"red";
+  
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.5em;
+    font-family: "bitter";
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  a{
+    display: block;
+  }
+.medium{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: row;
+}
+
+
+
+.me img{
+    width:100%;
+    height:41.575vh;
+    margin-top: 10%;
+    padding-left: 12%;
+}
+.medis{
+    flex: 1;
+    margin: 0;
+    text-align: justify;
+    padding-left: 25%;
+    margin-top: 10%;
+    font-size: 15px;
+    
+}
+
+.login-box{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 440px;
+  height:480px;
+  padding: 30px;
+}
+.login-header{
+  text-align: center;
+  margin:20px 0 40px 0;
+}
+.login-header{
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #dfdfdf;
+
+}
+
+.input-box .input-field{
+  width: 100%;
+  height:50px ;
+  font-size: 16px;
+  padding: 0 24px;
+  margin-bottom: 14px;
+  border-radius: 30px;
+  border: none;
+
+  box-shadow:0px 5px 1px rgba(0,0,0, 0.05) ;
+  outline: none;
+  transition: .4s;
+}
+::placeholder{
+  font-weight:500 ;
+  color:black;
+
+}
+.forgot{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+ 
+}
+
+section{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color:#555;
+}
+#check{
+  margin-right: 9px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+section a{
+  color: blue;
+}
+.input-submit{
+  position: relative;
+}
+
+.submit-btn{
+
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .4s;
+  color: white;
+}
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+th{
+  background: red;
+  }
+
+  .cart{
+  color: black;
+  }
+
+.basekt-total{
+  margin-top: 20%;
+
+}
+
+.login-box{
+  border-radius: 4px;
+background-color: #fff;
+  text-align: center;
+ max-width: 500px;
+  border-radius: 4px;
+  width:100%;
+  box-shadow: 0px 3px 10 px 1 px rgba( 0, 0, 0, 0.1);
+
+  
+}
+input{
+  display: block;
+  width:100%;
+  margin-bottom: 15px;
+  border:1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.con{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 78px;
+ background-color:#1abc9c;
+}
+.login-button{
+
+  background: #16a085;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+
+
+
+  .sign{
+
+    background: #16a085;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+
+
+a.b{
+  display:inline-block;
+  margin-right: 4px;
+  text-decoration: none;
+  
+}
+
+
+a.b button {
+  color: white;
+  padding: 9px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-flex; /* Align icon and text horizontally */
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+}
+
+button.edit{
+  background-color: lightblue ;
+}
+
+button.del{
+  background-color: red;
+}
+
+button.add{
+  background-color: green;
+}
+
+
+
+
+header{
+  text-align: center;
+}
+
+
+.confirm{
+  background-color: aqua;
+}
+
+.wow{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.ad {
+  display: flex;
+  justify-content: center; }
+
+
+.ad .add {
+  background-color: #ffffff; 
+  padding: 21px; 
+  border: 3px solid #ccc; 
+  border-radius: 7px; /* Rounded corners */
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1); 
+  max-width: 399px; 
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+
+
+
+/* Specific styling for these buttons */
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.manage-order-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Optional: Change color on hover */
+.logout-btn:hover {
+  background-color: #ff1a1a;
+}
+
+.manage-order-btn:hover {
+  background-color: #45a049;
+}
+
+
+.out-btn{
+  color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  text-align: center;
+}
+
+.content-box {
+  margin-bottom: 10%;
+  max-width: 800px;
+  line-height: 1.6;
+  font-style: italic;
+  font-size: large;
+}
+
+/* Ensure full height for the page */
+
+
+/* Center the content vertically and horizontally */
+.confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Styling for the confirmation message box */
+.wow {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Styling for the heading */
+.wow h1 {
+  color: #4CAF50;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/* Styling for the paragraph (message) */
+.wow p {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the button */
+.mem {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.mem a {
+  color: white;
+  text-decoration: none;
+}
+
+.mem:hover {
+  background-color: #45a049;
+}
+
+
+
+
+/* Styling for the Manage Product Button */
+.manage-product-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.manage-product-btn:hover {
+  background-color: #45a049;
+}
+
+.manage-product-btn:active {
+  background-color: #3e8e41;
+}
+
+.manage-product-btn:focus {
+  outline: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .products {
+    flex-direction: column;
+    height: 100%;
+  }
+  .container{
+    flex-direction: column;
+    height: 100%;
+    
+  }
+  .pic{
+    flex-direction: column;
+    height: 100%;
+    
+  }
+
+ 
+  .container p {
+    text-align: center;
+  
+  }
+
+  .text{
+    padding: 0 10px;
+    max-width: 100%;
+    text-align: center;
+  }
+.text h1{
+    font-size: 2em;
+}
+.text p {
+    font-size: 1em;
+}
+.con{
+  width: 70%;
+  padding: 15px;
+}
+.login-box{
+  width: 85%;
+  padding: 14px;
+  
+}
+.login-header{
+  font-size: 20px;
+  margin: 10px 0 30px 0;
+}
+.input-box .input-filed{
+  font-size:12px ;
+  padding: 0 12px;
+  height: 40px;
+}
+.forgot section{
+  font-size: 10px;
+}
+
+.submit-btn{
+  height: 40px;
+}
+.sign-up-link{
+  font-size: 13px;
+}
+
+
+.medium{
+  flex-direction: column;
+  height: 100%;
+}
+.medis{
+  text-align: center;
+  font-size: 15px;
+
+}
+
+
+}
+
