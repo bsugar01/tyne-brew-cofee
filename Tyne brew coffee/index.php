@@ -27,14 +27,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
 
    if(!$productFound)
    {
-      $_SESSION['basket'][] = 
-      [
-         'id' => $product_id,
-         'name' => $_POST['product_name'],
-         'flavour' => $_POST['flavour'],
-         'price' => $_POST['price'],
-         'image_url' => $_POST['image_url'],
-         'quantity' => $quantity
+      $_SESSION['basket'][] =
+[
+   'id' => $product_id,
+   'name' => $_POST['product_name'],
+   'flavour' => $_POST['flavour'],
+   'price' => $_POST['price'],
+   'image_url' => $_POST['image_url'],
+   'quantity' => $quantity;  // ← semicolon instead of closing bracket
+
       ];
    }
 
