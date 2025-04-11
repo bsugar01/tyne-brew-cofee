@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
      the go</p>
      </div>
      <div class="pic">
-      <img src="/image/barista.png" alt="coffee beans">
+      <img src="image/barista.png" alt="coffee beans">
      </div>
      </div>
 
