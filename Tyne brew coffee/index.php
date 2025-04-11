@@ -9,7 +9,7 @@ if(!isset($_SESSION['basket']))
 }
 
 // Handle adding product to basket
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
+($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
     $product_id = $_POST['product_id'];
     $quantity = $_POST['quantity'];
 
