@@ -30,7 +30,7 @@ jobs:
         php-version: '8.0'
 
     - name: ✅ Validate PHP syntax
-      run: find . -type f -name "*.php" -exec php -l {} \;
+      run: find . -name "*.php" -print0 | xargs -0 -n1 php-1
 
     - name: 📂 Sync files via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
