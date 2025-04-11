@@ -31,7 +31,7 @@ jobs:
 
     - name: Validate PHP syntax
       run : |
-       find . -name"*.php -print0 | xargs -0 -n1 php-1
+       find . -name "*.php" -print0 | xargs -0 -n1 php -l
 
     - name: 📂 Sync files via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
