@@ -195,9 +195,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
          <p>708 Grey Street 
          <br>Newcastle</p>
          <P>tynebrew@gmail.com</P>
-      </div>23423423
+      </div>
       
-     </footer>
+ 
 
 </body>
 </html>
