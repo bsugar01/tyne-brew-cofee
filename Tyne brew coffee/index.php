@@ -197,7 +197,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['product_id'])) {
          <P>tynebrew@gmail.com</P>
       </div>
       
-     </footer>
+
 
 </body>
 </html>
