@@ -1,4 +1,4 @@
-on: 
+on:
   push:
     branches:
       - main
@@ -7,28 +7,34 @@ name: 🚀 Deploy website on push
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy website
+    name: 🎉 Validate and Deploy
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
 
-    - name: 🔧 Setup Node.js
-      uses: actions/setup-node@v3
+    - name: 🔧 Set up PHP
+      uses: shivammathur/setup-php@v2
       with:
-        node-version: '18'
+        php-version: '8.2'
 
-    - name: 📦 Install HTMLHint
-      run: npm install -g htmlhint
+    - name: 🖥️ Start PHP Server in Background
+      run: php -S localhost:8000 > /dev/null 2>&1 &
 
-    - name: 🔍 Run HTMLHint on your code
-      run: htmlhint ./
-
-    - name: 📂 Sync files via FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    - name: ☕ Set up Java
+      uses: actions/setup-java@v3
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /public_html/L5SW/Sagar/
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: 🧪 Download vnu.jar (HTML Validator)
+      run: |
+        mkdir -p tools
+        curl -L https://github.com/validator/validator/releases/latest/download/vnu.jar -o tools/vnu.jar
+
+    - name: 🔍 Validate rendered HTML from PHP
+      run: |
+        curl http://localhost:8000/index.php -o output.html
+        java -jar tools/vnu.jar --Werror output.html
+
 
