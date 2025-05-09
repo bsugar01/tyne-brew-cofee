@@ -18,7 +18,7 @@
     <div class="logo"><img src="image/logo2.png" alt="logo" href="home.html"></div>
     <ul>
    
-    <li><a href="home.html">Home</a></l=i>
+    <li><a href="home.html">Home</a></li>
     <li><a href="aboutus.php">About us</a></li>
     <li><a href="login.php"><i class="fa-solid fa-user"></i></a></li>
     <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
